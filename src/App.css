@@ -1,0 +1,164 @@
+
+/* Main page stays white */
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  color: #202124;
+}
+
+/* Dark header */
+.header {
+  background-color: #202124;
+  color: #ffffff;
+  padding: 28px 32px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 32px;
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+
+.header p {
+  color: #c9c9c9;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Dark Fitness Chat card */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #202124;
+  color: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  font-size: 26px;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+
+main p {
+  color: #c9c9c9;
+  margin: 0;
+}
+
+/* Chat area: slightly lighter than the main card */
+.chat-window {
+  margin-top: 28px;
+  padding: 24px;
+  min-height: 250px;
+  background-color: #292d32;
+  border: 1px solid #3c424a;
+  border-radius: 10px;
+  text-align: left;
+}
+
+/* Welcome message box */
+.chat-welcome {
+  padding: 20px;
+  background-color: #343a40;
+  border: 1px solid #454c54;
+  border-radius: 10px;
+}
+
+.chat-welcome h3 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.chat-welcome p {
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.message {
+  max-width: 85%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.message strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.message p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #3b4a5a;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background-color: #343a40;
+}
+
+
+.chat-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.chat-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 14px;
+  border: 1px solid #454c54;
+  border-radius: 8px;
+  background-color: #292d32;
+  color: #ffffff;
+  outline: none;
+}
+
+.chat-form input::placeholder {
+  color: #a0a8b2;
+}
+
+.chat-form input:focus {
+  border-color: #7c9bc0;
+}
+
+.chat-form button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3b4a5a;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chat-form button:hover {
+  background-color: #4b6075;
+}
+
+.error-message {
+  flex-basis: 100%;
+  margin: 0;
+  color: #fca5a5;
+  font-size: 14px;
+}
